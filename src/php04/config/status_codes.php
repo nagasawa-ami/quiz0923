@@ -73,5 +73,4 @@ $status_codes = [
 ];
 
 
-var_dump($status_codes);
 
