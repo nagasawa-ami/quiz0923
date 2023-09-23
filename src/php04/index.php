@@ -32,7 +32,7 @@ $question = $options[mt_rand(0,3)];
 <body>
     <header class="header">
         <div class="header__inner">
-            <a  class="header__logo" href="">
+            <a  class="header__logo" href="/">
                 Status Code Quiz
             </a>
         </div>
@@ -45,7 +45,7 @@ $question = $options[mt_rand(0,3)];
                 <p class="question__text"><?php echo $question['description']; ?></p>
             </div>
         </div>
-        <form class="quiz-form" action="result.php" method="post">
+          <form class="quiz-form" action="result.php" method="POST">
             <input type="hidden" name="answer_code" value="<?php echo $question['code'] ?>">
             <div class="quiz-form__item">
                 <?php  foreach ($options as $option): ?>
@@ -61,9 +61,8 @@ $question = $options[mt_rand(0,3)];
                 <button class="quiz-form__button-submit" type="submit">回答
                 </button>
             </div>
-
-
-        </form>
+          </form>
+        </div>
     </main>
 
 

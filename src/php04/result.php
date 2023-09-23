@@ -6,8 +6,9 @@ require_once('config/status_codes.php');
 $answer_code = htmlspecialchars($_POST['answer_code'], ENT_QUOTES);
 $option = htmlspecialchars($_POST['option'], ENT_QUOTES);
 
+
 if (!$option) {
-  header('Location: index.php');
+  header('Location:index.php');
 }
 
 foreach ($status_codes as $status_code) {
@@ -72,9 +73,5 @@ $result = $option === $code;
     </div>
 
     </main>
-
-
 </body>
-
-
 </html>

@@ -72,5 +72,3 @@ $status_codes = [
 
 ];
 
-
-
